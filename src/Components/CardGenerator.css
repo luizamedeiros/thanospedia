@@ -1,0 +1,44 @@
+body{
+    background-color: #111415;
+}
+.cardsDiv{
+    width: 75%;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 20px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    background-color: #F6FEFF;
+}
+.card{
+    height: 350px;
+    margin: auto 15px;
+    background-color: black;
+    padding: 10px;
+}
+
+#gauntlet{
+    height: 100px;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    text-align: left;
+    align-items: center;
+    background-color: #EC1D24;
+    color: white;
+    letter-spacing: 2px;
+}
+
+::-webkit-scrollbar {
+    margin: 0.5px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #EC1D24;
+    border-radius: 100px;
+}

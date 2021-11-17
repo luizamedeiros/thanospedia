@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { CardGenerator } from './Components/CardGenerator';
+import { useEffect, useState } from 'react';
+import { Header } from './Components/Header';
 
 function App() {
+  var [comics, setComics] = useState([]);
+
+  useEffect(()=>{
+    const GetComicOptions = async () => {
+      var returnedComics = [];
+      var md5Generator = require("md5");
+      const timestamp = Date.now();
+      const publicKey= '';
+      const privateKey = '';
+      const hash=md5Generator(timestamp+privateKey+publicKey);
+      const limit = '5';
+  
+      await fetch(`http://gateway.marvel.com/v1/public/comics?ts=${timestamp}&apikey=${publicKey}&hash=${hash}&limit=${limit}`)
+      .then(res =>{
+          return res.json();
+      }).then((jsonParsed)=>{
+        returnedComics = (jsonParsed.data.results);    
+      })
+      setComics(returnedComics);
+  }
+    GetComicOptions();
+    
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <CardGenerator allComics={comics}/>
     </div>
   );
 }
