@@ -1,21 +1,22 @@
 import './CardGenerator.css';
 
-const Search = () =>{
+const Search = ( {searchQuery, setSearchQuery} ) =>{
+
     return(
-        
         <form action="/" method="get">
             <label htmlFor="searchBar">
                 <span className="accessible">Look up a comic</span>
             </label>
             <div className="searchDiv">
             <input
+                value= {searchQuery}
+                onInput={ event => setSearchQuery(event.target.value)}
                 className="searchInput"
                 type="text"
                 id="searchBar"
                 placeholder="Look up a comic..."
-                name="s" 
+                name="search" 
             />
-            <button type="submit">Search</button>
             </div>
         </form>
     )

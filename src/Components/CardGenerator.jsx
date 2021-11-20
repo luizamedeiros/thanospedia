@@ -19,7 +19,6 @@ export function CardGenerator(allComics){
     return(
         <>
             <div className ="cardsDiv">
-                {console.log(comics)}
                 {comics.map((comic)=>{
                     return(
                     <Card {...comic=comic}/>
