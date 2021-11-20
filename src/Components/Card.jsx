@@ -27,7 +27,8 @@ export function Card(cardComic){
                     imageUrl: cardComic.thumbnail,
                     imageHeight: 200,
                     showConfirmButton: false,
-                    showCloseButton: true
+                    showCloseButton: true,
+                    customClass: "modal"
                 })
             }}/>
         </>

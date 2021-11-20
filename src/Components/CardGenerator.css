@@ -1,5 +1,7 @@
 body{
     background-color: #111415;
+    padding-bottom: 50px;
+    overflow-x: hidden;
 }
 .cardsDiv{
     width: 75%;
@@ -11,6 +13,15 @@ body{
     flex-direction: row;
     overflow: scroll;
     background-color: #F6FEFF;
+}
+.cardsDiv::-webkit-scrollbar {
+    margin: 0.5px;
+    height: 10px;
+}
+
+.cardsDiv::-webkit-scrollbar-thumb {
+    background: #EC1D24;
+    border-radius: 100px;
 }
 .card{
     height: 350px;
@@ -25,20 +36,66 @@ body{
 #header{
     display: flex;
     flex-direction: row;
-    padding: 10px;
     text-align: left;
     align-items: center;
     background-color: #EC1D24;
     color: white;
     letter-spacing: 2px;
+    width: calc(100%);
+    justify-content: space-between;
+}
+#header h1{
+    display: flex;
+    align-items: center;
 }
 
-::-webkit-scrollbar {
-    margin: 0.5px;
-    height: 7px;
+.searchInput{
+    border: none;
+    margin-right: 2%;
+}
+.searchDiv{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+/* Making a class for elements that are only being used for screenreader purposes. */
+.accessible{
+    display: none;
 }
 
-::-webkit-scrollbar-thumb {
-    background: #EC1D24;
-    border-radius: 100px;
+@media screen and (max-width: 768px){
+
+    .cardsDiv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: calc(88%);
+    padding: 6%;
+    flex-wrap: wrap;
+    align-items: center;
+    border: none
+    }
+
+    .card{
+        margin-bottom: 20px;
+        width: 60%;
+        height: 90%;
+    }
+    body{
+        background-color: #F6FEFF;
+        width: 98%;
+    }
+    .modal{
+        width: 85% !important;
+        height: 80%;
+    }
+    #header{
+        width: calc(100% - 8px);
+        overflow: hidden;
+        flex-direction: column;
+        align-content: center;
+    }
+    .searchDiv{
+        margin: auto;
+    }
 }
