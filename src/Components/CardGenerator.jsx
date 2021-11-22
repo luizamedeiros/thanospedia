@@ -12,6 +12,7 @@ export function CardGenerator(allComics){
                 characters: comic.characters,
                 issueNumber: comic.issueNumber,
                 description: comic.description,
+                id: comic.id
             };
         });
 
@@ -20,7 +21,7 @@ export function CardGenerator(allComics){
         <div className="cardsDiv">    
                 {comics.map((comic)=>{
                     return(
-                    <Card {...comic=comic}/>
+                    <Card key={`${comic.id}`} {...comic}/>
                     );
                 })}
         </div>

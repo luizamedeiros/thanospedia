@@ -4,6 +4,6 @@ import './style.css';
 
 export const Header = ()=>{
     return(
-            <h1><img id="gauntlet" src={infinityGauntlet}/>ThanosPedia</h1>
+            <h1><img id="gauntlet" alt="Imagem da manopla do Thanos" src={infinityGauntlet}/>ThanosPedia</h1>
     )
 }

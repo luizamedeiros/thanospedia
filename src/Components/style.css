@@ -11,7 +11,7 @@ body{
     padding: 40px;
     display: flex;
     flex-direction: row;
-    overflow: scroll;
+    overflow: auto;
     background-color: #F6FEFF;
 }
 .cardsDiv::-webkit-scrollbar {
