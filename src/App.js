@@ -14,13 +14,13 @@ function App() {
       var returnedComics = [];
       var md5Generator = require("md5");
       const timestamp = Date.now();
-      const publicKey= '';
-      const privateKey = '';
+      const publicKey= 'be318ed4c1f49229ec253908a0463940';
+      const privateKey = '6d2be3e43be5c7c5cbc3b14427b69ee7d1d66412';
       const hash=md5Generator(timestamp+privateKey+publicKey);
       const limit = '20';
       const dateDescriptor="lastWeek";
   
-      await fetch(`http://gateway.marvel.com/v1/public/comics?ts=${timestamp}&apikey=${publicKey}&hash=${hash}&limit=${limit}&dateDescriptor=${dateDescriptor}`)
+      await fetch(`http://gateway.marvel.com/v1/public/comics?ts=${timestamp}&apikey=${publicKey}&hash=${hash}&dateDescriptor=${dateDescriptor}`)
       .then(res =>{
           return res.json();
       }).then((jsonParsed)=>{
