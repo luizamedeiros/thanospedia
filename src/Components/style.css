@@ -8,11 +8,12 @@ body{
     border: solid 1px black;
     margin: auto;
     margin-top: 20px;
-    padding: 40px;
+    padding: 50px;
     display: flex;
     flex-direction: row;
     overflow: auto;
     background-color: #F6FEFF;
+    min-height: 375px;
 }
 .cardsDiv::-webkit-scrollbar {
     margin: 0.5px;
@@ -22,12 +23,19 @@ body{
 .cardsDiv::-webkit-scrollbar-thumb {
     background: #EC1D24;
     border-radius: 100px;
+    
 }
 .card{
-    height: 350px;
+    height: 320px;
     margin: auto 15px;
     background-color: black;
     padding: 10px;
+}
+.card:hover{
+    cursor: pointer;
+    border: solid 3px #EC1D24;
+    border-radius: 10px;
+    height: 330px;
 }
 
 #gauntlet{
