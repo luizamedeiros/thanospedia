@@ -3,7 +3,25 @@
 ## Resumo da aplicação
 
 Essa aplicação é um Single Page Application que lista os quadrinhos da última semana, recebidos através da <a href="https://developer.marvel.com/"> API da Marvel. </a> É possível, também, pesquisar por quadrinhos através de seus títulos. O resultado da pesquisa é mostrado na tela de forma dinâmica, enquanto o usuário digita. Para ver mais informações sobre o quadrinho desejado, basta selecioná-lo na lista, e aparecerá uma modal contendo as informações do quadrinho.
-
+<div>
+  <ul>
+    <li>
+      <h3> Captura de tela - proposta desktop </h3>
+      <img src="https://github.com/luizamedeiros/thanospedia/blob/main/src/assets/Screenshots/Screenshot%20web.jpg"/>
+      </li>
+    <li>
+    <h3> Captura de tela - proposta mobile </h3>
+    <img src="https://github.com/luizamedeiros/thanospedia/blob/main/src/assets/Screenshots/Screenshot%20mobile.jpg"/>
+    </li>
+    <li>
+      <h3> Captura de tela - modal - proposta desktop </h3>
+      <img src="https://github.com/luizamedeiros/thanospedia/blob/main/src/assets/Screenshots/Screenshot%20web%20search.jpg"/>
+      </li>
+    <li>
+    <h3> Captura de tela - modal - proposta mobile </h3>
+    <img src="https://github.com/luizamedeiros/thanospedia/blob/main/src/assets/Screenshots/Screenshot%20mobile%20modal.jpg"/>
+    </li>
+</div>
 
 ## Como usar?
 <ol>
