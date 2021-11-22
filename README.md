@@ -2,7 +2,7 @@
 
 ## Resumo da aplicação
 
-Essa aplicação é um Single Page Application que lista os quadrinhos recebidos através da <a href="https://developer.marvel.com/"> API da Marvel. </a> É possível, também, pesquisar por quadrinhos através de seus títulos. O resultado da pesquisa é mostrado na tela de forma dinâmica, enquanto o usuário digita. Para ver mais informações sobre o quadrinho desejado, basta selecioná-lo na lista, e aparecerá uma modal contendo as informações do quadrinho.
+Essa aplicação é um Single Page Application que lista os quadrinhos da última semana, recebidos através da <a href="https://developer.marvel.com/"> API da Marvel. </a> É possível, também, pesquisar por quadrinhos através de seus títulos. O resultado da pesquisa é mostrado na tela de forma dinâmica, enquanto o usuário digita. Para ver mais informações sobre o quadrinho desejado, basta selecioná-lo na lista, e aparecerá uma modal contendo as informações do quadrinho.
 
 
 ## Como usar?
@@ -29,4 +29,5 @@ Algumas considerações referentes à acessibilidade, responsividade, e possíve
 <li> O label foi desenvolvido para a barra de pesquisa, mas teve o seu estilo configurado para não ser exibido na tela, por decisões estilísticas. Ainda, ter o label configurado é uma boa prática de acessibilidade, para usuários que dependem de tecnologias de leitores de tela. </li>
 <li> Embora o sweetalert2 tenha modais responsivos, para telas menores, modais podem ser desconfortáveis em telas menores. Por isso, seria interessante a implementação de <a href="https://vwo.com/ab-testing/"> testes A/B </a> para validar qual estilo de tela usuários preferem. Uma boa opção de implementação para isso é o <a href="https://www.npmjs.com/package/@marvelapp/react-ab-test"> React A/B test, da Marvel App</a>.</li>
 <li> Por enquanto, só é possível pesquisar por quadrinhos através de seus títulos. Seria interessante poder pesquisar por personagem e criador também. </li>
+<li> Embora todas as imagens da aplicação tenham texto alternativo configurado por mim, seria melhor se a própria API da Marvel disponibilizasse texto alternativo para, pelo menos, a capa dos quadrinhos.</li>
 </ul>
