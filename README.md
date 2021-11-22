@@ -1,4 +1,4 @@
-# thanospedia
+# Thanospedia - uma wiki para o Thanos
 
 ## Resumo da aplicação
 
