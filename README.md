@@ -2,7 +2,7 @@
 
 ## Resumo da aplicação
 
-Essa aplicação é um Single Page Application que lista os quadrinhos da última semana, recebidos através da <a href="https://developer.marvel.com/"> API da Marvel. </a> É possível, também, pesquisar por quadrinhos através de seus títulos. O resultado da pesquisa é mostrado na tela de forma dinâmica, enquanto o usuário digita. Para ver mais informações sobre o quadrinho desejado, basta selecioná-lo na lista, e aparecerá uma modal contendo as informações do quadrinho.
+Essa aplicação é um Single Page Application que lista os quadrinhos da Marvel que foram lançados ao longo da última semana. É possível, também, pesquisar por quadrinhos através de seus títulos. O resultado da pesquisa é mostrado na tela de forma dinâmica, enquanto o usuário digita. Para ver mais informações sobre o quadrinho desejado, basta selecioná-lo na lista, e aparecerá uma modal contendo informações sobre o quadrinho.
 <div>
   <ul>
     <li>
@@ -27,7 +27,7 @@ Essa aplicação é um Single Page Application que lista os quadrinhos da últim
 <ol>
 <li> Baixe e descompacte o projeto, ou faça um <b> git clone </b> no repositório. </li>
 <li> Faça um <b> npm install </b> para baixar as dependências necessárias. </li>
-<li> Abra o projeto em seu ambiente de desenvolvimento de preferência, acesse src>App.js. Na constante "publicKey" e "privateKey", insira as suas chaves da Marvel. Você pode conseguí-las <a href="https://developer.marvel.com/account"> aqui </a></li>
+<li> Abra o projeto em seu ambiente de desenvolvimento de preferência, acesse src>App.js. Na constante <b>"publicKey"</b> e <b>"privateKey"</b>, insira as suas chaves da Marvel. Você pode conseguí-las <a href="https://developer.marvel.com/account"> aqui </a></li>
 <li> Faça <b> npm start </b> para abrir o projeto em modo de desenvolvimento, ou <b> npm build </b> para abrir o projeto em modo de produção. </li>
 </ol>
 
@@ -35,6 +35,7 @@ Essa aplicação é um Single Page Application que lista os quadrinhos da últim
 
 A aplicação foi feita usando o <a href="https://reactjs.org/"> React</a> v.17.0.2.
 <ul>
+  <li> Para requisitar as informações, foi utilizado a <a href="https://developer.marvel.com/"> API da Marvel. </a> </li>
 <li> Para facilitar a implementação e sua manutenção, ela foi feita de forma componentizada.</li>
 <li> O desenvolvimento de modais foi feito utilizando o <a href="https://sweetalert2.github.io/"> sweetalert2 </a>, por ser customizável, bonito, e por questões de acessibilidade.</li>
 <li> Para deixar a aplicação responsiva, foi utilizado <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp"> media query </a> para configurar os elementos em telas menores que 768px. Sendo assim, dispositivos como celulares e tablets têm uma versão mais amigável para as suas telas.</li>
