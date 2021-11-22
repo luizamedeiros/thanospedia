@@ -31,7 +31,7 @@ function App() {
     GetComicOptions();
     
   }, [])
-
+  
   const { search } = window.location;
   const query = new URLSearchParams(search).get('search');
   const [searchQuery, setSearchQuery] = useState(query || '');
@@ -45,7 +45,7 @@ function App() {
     const comicMatched = comic.title.toLowerCase();
     return comicMatched.includes(query);
   })}
-  
+
   return (
     <Router>
       <div className="App">
@@ -54,7 +54,8 @@ function App() {
           <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         </div>
         <Routes>
-          <Route path="/" element={((filteredComics.length>0)?<CardGenerator allComics={filteredComics}/>:<NotFound/>)}/>
+          <Route path="/" element={<CardGenerator allComics={filteredComics}/>}/>
+          <Route path="*" element={<NotFound/>}/>
         </Routes>
       </div>
     </Router>
