@@ -54,8 +54,7 @@ function App() {
           <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         </div>
         <Routes>
-          <Route path="/" element={<CardGenerator allComics={filteredComics}/>}/>
-          <Route path="*" element={<NotFound/>}/>
+          <Route path="/" element={((filteredComics.length>0)?<CardGenerator allComics={filteredComics}/>:<NotFound/>)}/>
         </Routes>
       </div>
     </Router>
