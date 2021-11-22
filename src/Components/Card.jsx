@@ -3,33 +3,23 @@ import Swal from 'sweetalert2';
 import './style.css'
 
 export function Card(cardComic){
-    // const noInfo = "Oh no! The Avengers found out about your site and stole away some data! This description isn't available!"
-    // if (cardComic.description==null){
-    //     cardComic.description = noInfo;
-    // }
-    // if (cardComic.characters!=[]){
-    //     cardComic = {characters: noInfo};
-    // }
-    // else{
-    //     let i = 0;
-    //     while (i<cardComic.characters.length){
-    //         cardComic.characters += `,  ${cardComic.characters.name}`;
-    //         i++;
-    //     }
-    // }
+    const noInfo = "<em> Opa! Parece que os Vingadores descobriram seu plano e roubaram essa informação! </em>";
+
     return(
         <>
-            <img className="card" src= {cardComic.thumbnail} onClick={()=>{
+            <img className="card" src= {cardComic.thumbnail} alt={`Capa do quadrinho ${cardComic.title}`} onClick={()=>{
                 Swal.fire({
                     title: cardComic.title,
-                    html: "<strong> Resumo: </strong>" + cardComic.description + "<br/>"
-                    + "<strong>Número de páginas: </strong>" + cardComic.pageCount + "<br/>" + "<strong> Série: </strong>"
-                    + cardComic.series + "<br/>" + "<strong> Número: </strong>" + cardComic.issueNumber,
+                    html: "<strong> Resumo: </strong>" + (cardComic.description? cardComic.description : noInfo) + "<br/>"
+                    + "<strong>Número de páginas: </strong>" +  (cardComic.pageCount? cardComic.pageCount : noInfo) + "<br/>" 
+                    + "<strong> Série: </strong>" + (cardComic.series? cardComic.series: noInfo) + "<br/>" 
+                    + "<strong> Número: </strong>" + (cardComic.issueNumber? cardComic.issueNumber: noInfo), 
                     imageUrl: cardComic.thumbnail,
                     imageHeight: 200,
                     showConfirmButton: false,
                     showCloseButton: true,
-                    customClass: "modal"
+                    customClass: "modal",
+                    imageAlt: "Capa do quadrinho"
                 })
             }}/>
         </>

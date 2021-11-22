@@ -17,14 +17,12 @@ export function CardGenerator(allComics){
 
 
     return(
-        <>
-            <div className ="cardsDiv">
+        <div className="cardsDiv">    
                 {comics.map((comic)=>{
                     return(
                     <Card {...comic=comic}/>
                     );
                 })}
-            </div>
-        </>
+        </div>
     );
 }
