@@ -14,8 +14,8 @@ function App() {
       var returnedComics = [];
       var md5Generator = require("md5");
       const timestamp = Date.now();
-      const publicKey= 'be318ed4c1f49229ec253908a0463940';
-      const privateKey = '6d2be3e43be5c7c5cbc3b14427b69ee7d1d66412';
+      const publicKey= '';
+      const privateKey = '';
       const hash=md5Generator(timestamp+privateKey+publicKey);
       const limit = '20';
       const dateDescriptor="lastWeek";
