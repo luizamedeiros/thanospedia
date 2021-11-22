@@ -9,6 +9,7 @@ Essa aplicação é um Single Page Application que lista os quadrinhos da últim
 <ol>
 <li> Baixe e descompacte o projeto, ou faça um <b> git clone </b> no repositório. </li>
 <li> Faça um <b> npm install </b> para baixar as dependências necessárias. </li>
+<li> Abra o projeto em seu ambiente de desenvolvimento de preferência, acesse src>App.js. Na constante "publicKey" e "privateKey", insira as suas chaves da Marvel. Você pode conseguí-las <a href="https://developer.marvel.com/account"> aqui </a></li>
 <li> Faça <b> npm start </b> para abrir o projeto em modo de desenvolvimento, ou <b> npm build </b> para abrir o projeto em modo de produção. </li>
 </ol>
 
