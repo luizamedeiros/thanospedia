@@ -14,7 +14,7 @@ Essa aplicação é um Single Page Application que lista os quadrinhos recebidos
 
 ## Tecnologias
 
-A aplicação foi feita usando o <a href="https://reactjs.org/"> React. </a>
+A aplicação foi feita usando o <a href="https://reactjs.org/"> React</a> v.17.0.2.
 <ul>
 <li> Para facilitar a implementação e sua manutenção, ela foi feita de forma componentizada.</li>
 <li> O desenvolvimento de modais foi feito utilizando o <a href="https://sweetalert2.github.io/"> sweetalert2 </a>, por ser customizável, bonito, e por questões de acessibilidade.</li>
