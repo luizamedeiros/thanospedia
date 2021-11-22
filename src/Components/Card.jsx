@@ -1,6 +1,6 @@
 import React from 'react';
 import Swal from 'sweetalert2';
-import './CardGenerator.css'
+import './style.css'
 
 export function Card(cardComic){
     // const noInfo = "Oh no! The Avengers found out about your site and stole away some data! This description isn't available!"
@@ -23,7 +23,8 @@ export function Card(cardComic){
                 Swal.fire({
                     title: cardComic.title,
                     html: "<strong> Resumo: </strong>" + cardComic.description + "<br/>"
-                    + "<strong>Número de páginas: </strong>" + cardComic.pageCount,
+                    + "<strong>Número de páginas: </strong>" + cardComic.pageCount + "<br/>" + "<strong> Série: </strong>"
+                    + cardComic.series + "<br/>" + "<strong> Número: </strong>" + cardComic.issueNumber,
                     imageUrl: cardComic.thumbnail,
                     imageHeight: 200,
                     showConfirmButton: false,

@@ -1,6 +1,6 @@
 import React from 'react';
 import infinityGauntlet from '.././assets/infinityGauntlet.png';
-import './CardGenerator.css';
+import './style.css';
 
 export const Header = ()=>{
     return(

@@ -45,15 +45,15 @@ function App() {
   })}
   
   return (
-    <Router>
       <div className="App">
         <div id = "header">
           <Header/>
           <Search searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
         </div>
-        <CardGenerator allComics={filteredComics}/>
+        <Router path="/">
+          <CardGenerator allComics={filteredComics}/>
+        </Router>
       </div>
-    </Router>
   );
 }
 

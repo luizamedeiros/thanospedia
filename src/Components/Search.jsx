@@ -1,9 +1,9 @@
-import './CardGenerator.css';
+import './style.css';
 
 const Search = ( {searchQuery, setSearchQuery} ) =>{
 
     return(
-        <form action="/" method="get">
+        <form action="/" method="get" className="responsiveForm">
             <label htmlFor="searchBar">
                 <span className="accessible">Look up a comic</span>
             </label>

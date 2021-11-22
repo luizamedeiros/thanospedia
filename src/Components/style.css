@@ -98,4 +98,7 @@ body{
     .searchDiv{
         margin: auto;
     }
+    .responsiveForm{
+        padding-bottom: 5%;
+    }
 }
